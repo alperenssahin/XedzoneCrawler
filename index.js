@@ -34,7 +34,7 @@ const fs = require('fs');
 			return pageCount;
 			},max);
 
-		for(let i = 1;i=<productDetail; i++){
+		for(let i = 1;i<=productDetail; i++){
 			let title = [];
 			console.log('Adres taranıyor URL:'+URL+'?sf='+i);
 			await page.goto(URL+'?sf='+i);
