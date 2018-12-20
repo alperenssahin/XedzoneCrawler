@@ -10,7 +10,7 @@ const fs = require('fs');
 	// // 	// productPages = data.split('\n');
 	// // 	productPages = data.split('\n');
 	// // });
-	let productPages = await fs.readFileSync('page.txt','utf8').split('\n');
+	let productPages = await fs.readFileSync('page.txt','utf8').split('\r');
 	let max = await Number(productPages[0]);
 
 	for(let x=1; x<productPages.length; x++){
